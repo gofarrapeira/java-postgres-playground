@@ -11,8 +11,11 @@ public class App {
 
     public static void main(String[] args) {
         new App();
-    }
+        System.out.println();
+        System.out.println("ola, mundo!");
 
+        }
+/*
     public App(){
         try(var conn = getConnection()){
             carregarDriverJDBC();
@@ -50,7 +53,7 @@ public class App {
         }
         
     }
-
+*/
     private void localizarEstado(Connection conn, String uf) {
         try{
             //var sql = "select * from estado where uf = '" + uf + "'"; //suscetível a SQL Injection
