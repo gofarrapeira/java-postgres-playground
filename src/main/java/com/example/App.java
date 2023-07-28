@@ -13,9 +13,27 @@ public class App {
         new App();
         System.out.println();
         System.out.println("ola, mundo!");
+            // tipo NomeVariavel;
+            int idade=40;
+            //cast - conversao de tipos
+            short IdadeNova = (short) idade;
 
+            boolean TemNecessidadesEspeciais= true;
+            if (TemNecessidadesEspeciais==true){
+            System.out.println("Voce tera atendimento prioritario");}
+            else {
+                System.out.println("Seu tempo de espera é normal");
+            }
+            var Sexo = 'F';
+            if (Sexo == 'M'){
+                System.out.println("É menino");}
+                else {
+                    System.out.println("É menina!");
+            }
+            double peso=58.5;
+            System.out.println("A idade de Gloria é:" + IdadeNova + "e seu peso ideal é:" +peso);
         }
-/*
+
     public App(){
         try(var conn = getConnection()){
             carregarDriverJDBC();
@@ -53,7 +71,7 @@ public class App {
         }
         
     }
-*/
+
     private void localizarEstado(Connection conn, String uf) {
         try{
             //var sql = "select * from estado where uf = '" + uf + "'"; //suscetível a SQL Injection
