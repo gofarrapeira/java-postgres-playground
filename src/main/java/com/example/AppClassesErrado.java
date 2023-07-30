@@ -9,7 +9,7 @@ public class AppClassesErrado {
         Cliente.setAnoNascimento(1983);
         Cliente.setSalario(-2000);
         Cliente.setSexo('D');
-        Cliente.setNome("Maria");
+        Cliente.setNome("");
         Cliente.setCPF("04972177403");
         System.out.println("O ano de nascimento do cliente é:" + Cliente.getAnoNascimento());
         System.out.println("O salario do cliente é:" + Cliente.getSalario());
@@ -21,7 +21,7 @@ public class AppClassesErrado {
         Cliente2.setAnoNascimento(1968);
         Cliente2.setSalario(140000);
         Cliente2.setSexo('F');
-        Cliente2.setNome("Gloria");
+        Cliente2.setNome("    Gloria");
         Cliente2.setCPF("04972177403");
 
     System.out.println("O ano de nascimento do cliente2 é:" + Cliente2.getAnoNascimento());

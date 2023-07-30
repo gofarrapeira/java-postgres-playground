@@ -26,7 +26,10 @@ public class cliente {
     }
 
     public void setNome(String nome){
-        Nome=nome;
+        if (nome.isBlank()){
+            System.out.println("Nome é obrigatorio");
+        }
+       this.Nome=nome.trim().toLowerCase();
     }
 
     public boolean isEspecial() {
@@ -34,7 +37,7 @@ public class cliente {
     }
 
     public void setEspecial(boolean especial) {
-        Especial = especial;
+        this.Especial = especial;
     }
     public double getSalario(){
         return Salario;
@@ -73,6 +76,6 @@ public class cliente {
     }
 
     void setCPF(String cpf){
-        CPF=cpf;
+       this.CPF=cpf;
     }
 }
