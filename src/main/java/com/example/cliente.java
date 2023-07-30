@@ -67,7 +67,7 @@ public class cliente {
     }
 
     void setSexo(char Sexo){
-        if (Sexo != 'M' &&  Sexo !='F')
+        if (Sexo != 'M' &&  Sexo !='F' && Sexo!= 'f' && Sexo!='m')
         System.out.println("So existem dois sexos: Feminino e Masculino");
         else 
         this.Sexo=Sexo;
