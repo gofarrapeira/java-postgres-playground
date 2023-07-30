@@ -7,6 +7,8 @@ public class cliente {
     private boolean Especial;
     private String Nome;
     private String CPF;
+    private String Cidade;
+
     
     public cliente(){
         System.out.println("Criando um cliente sem parâmetros");
@@ -77,5 +79,14 @@ public class cliente {
 
     void setCPF(String cpf){
        this.CPF=cpf;
+    }
+
+       
+    public String getCidade() {
+        return Cidade;
+    }
+
+    public void setCidade(String cidade) {
+        Cidade = cidade;
     }
 }

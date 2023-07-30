@@ -1,7 +1,7 @@
 package com.example;
 
 
-public class AppClassesErrado {
+public class AppClasses {
 
     public static void main(String[] args) {
         System.out.println("Criando uma classe");
@@ -11,6 +11,7 @@ public class AppClassesErrado {
         Cliente.setSexo('D');
         Cliente.setNome("");
         Cliente.setCPF("04972177403");
+        Cliente.setCidade("Recife");
         System.out.println("O ano de nascimento do cliente é:" + Cliente.getAnoNascimento());
         System.out.println("O salario do cliente é:" + Cliente.getSalario());
         System.out.println("O sexo do cliente é:" + Cliente.getSexo());
@@ -23,6 +24,8 @@ public class AppClassesErrado {
         Cliente2.setSexo('F');
         Cliente2.setNome("    Gloria");
         Cliente2.setCPF("04972177403");
+        Cliente2.setCidade("RECIFE");
+
 
     System.out.println("O ano de nascimento do cliente2 é:" + Cliente2.getAnoNascimento());
     System.out.println("O salario do cliente2 é:" + Cliente2.getSalario());
@@ -36,6 +39,11 @@ public class AppClassesErrado {
     System.out.println("Os CFPs são giuais");
     else
     System.out.println("Os CPFs são diferentes");
+
+    if (Cliente.getCidade().equalsIgnoreCase(Cliente2.getCidade()))
+    System.out.println("Os clientes moram na mesma cidade");
+    else
+    System.out.println("Os clientes moram em cidades diferentes");
 
     } 
 }
