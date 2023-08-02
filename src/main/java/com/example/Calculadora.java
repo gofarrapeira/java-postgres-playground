@@ -10,7 +10,7 @@ public class Calculadora {
     public static void main(String[] args) {
         Random numeroGerado = new Random();
         //usar o ramdom para gerar um numero entre 1 e 50
-        int numero= numeroGerado.nextInt(51);
+        int numero= numeroGerado.nextInt(50) + 1;
          System.out.println(numero);   
    // int y = numero%2;
    // System.out.println("O resto da divisao do numero gerado por 2 é" +y);   
