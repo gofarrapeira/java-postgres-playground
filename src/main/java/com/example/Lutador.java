@@ -78,7 +78,7 @@ public class Lutador {
     public int getVitorias(){
         return this.vitorias;
     }            
-    public void setVitorias(int v){
+    public void setVitorias(){
         System.out.println("O numero de vitorias era" +getVitorias());
         this.vitorias= getVitorias() +1;
         System.out.println("O numero de vitorias agora é" +getVitorias());
@@ -86,7 +86,7 @@ public class Lutador {
     public int getDerrotas(){
         return this.derrotas;
     }            
-    public void setDerrotas(int d){
+    public void setDerrotas(){
         System.out.println("O numero de derrotas era" + getDerrotas());
         this.derrotas= getDerrotas() +1;
         System.out.println("O numero de derrotas agora é" + getDerrotas());
@@ -94,7 +94,7 @@ public class Lutador {
     public int getEmpates(){
         return this.empates;
     }            
-    public void setEmpates(int e){
+    public void setEmpates(){
         System.out.println("O numero de empates era" + getEmpates());
         this.empates= getEmpates() +1;
         System.out.println("O numero de derrotas agora é" + getEmpates());
