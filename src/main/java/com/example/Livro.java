@@ -1,6 +1,6 @@
 package com.example;
 
-public class Livro {
+public class Livro implements Publicacao {
     private String titulo;
     private String autor;
     private int totalPaginas;
@@ -66,10 +66,40 @@ public class Livro {
     }
  public void detalhes(){
     System.out.println("#####Detalhes do livro:#####");
-    sys
+    System.out.println("TITULO:" +this.titulo);
+    System.out.println("AUTOR:" +this.autor);
+    System.out.println("Total de Paginas:" +this.totalPaginas);
  }
-    
+        public void abrirLivro(){
+            if(this.aberto==false){
+            System.out.println("O livro está fechado");
+            this.aberto=true;
+            System.out.println("Agora o livro está aberto");
+         } }
+        public void fecharLivro(){
+            if(this.aberto){
+                System.out.println("O livro está aberto");
+                this.aberto=false;
+                System.out.println("Agora o livro está fechado");}
+            } 
+        public void folhearLivro(){
+            for (int i = 1; i < this.totalPaginas; i++) {
+                System.out.println("Lendo a pagina:" +i);}
+            }
+        
+        public void avancarPagina(){
+            System.out.println("Estou lendo a pagina: " + this.getPaginaAtual());
+            int paginaVirada = this.getPaginaAtual() + 1;
+            System.out.println("A nova pagina é: " + paginaVirada);
+            }
+        public void voltarPagina(){
+            System.out.println("Estou lendo a pagina: " + this.getPaginaAtual());
+            int paginaVoltada = this.getPaginaAtual() - 1;
+            System.out.println("A nova pagina é: " + paginaVoltada);
+            }
+ }
+
 
     
-}
+
 

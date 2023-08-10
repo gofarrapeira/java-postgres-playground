@@ -1,7 +1,5 @@
 package com.example;
 
-import java.util.Scanner;
-
 public class Pessoa {
     private String nome;
     private int idade;
@@ -34,7 +32,7 @@ public class Pessoa {
     public void fazerAniversario(){
         this.idade = this.getIdade() + 1;
         System.out.println("Parabens, agora voce tem: " + this.getIdade());
-        
+
     }
 
 
