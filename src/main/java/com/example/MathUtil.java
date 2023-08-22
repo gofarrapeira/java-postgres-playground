@@ -7,6 +7,8 @@ public class MathUtil {
         return  b;}
     //propriedade2
         if (b==0){
+            int Maior = Math.max(a, b);
+            a=Maior;
             return Math.abs(a);
         }
     

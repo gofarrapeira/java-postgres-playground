@@ -49,5 +49,26 @@ int obtido = MathUtil.mdc(a,b);
 assertEquals(esperado,obtido);
 
 }
+@Test
+public void mdcProprieade2NumeroNeg(){
+int a = -6; 
+int b= 0;
 
+int esperado  =6;
+int obtido = MathUtil.mdc(a,b);
+
+assertEquals(esperado,obtido);
+
+}
+@Test
+public void mdcPropriedade6(){
+int a = 6; 
+int b= 2;
+
+int esperado=MathUtil.mdc(b,a);
+int obtido = MathUtil.mdc(a,b);
+
+assertEquals(esperado,obtido);
+
+}
 }
